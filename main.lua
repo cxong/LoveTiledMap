@@ -33,6 +33,9 @@ function love.update( dt )
 	if (gKeyPressed.down) then gCamY = gCamY + s end
 	if (gKeyPressed.left) then gCamX = gCamX - s end
 	if (gKeyPressed.right) then gCamX = gCamX + s end
+  -- Keep camera within map bounds
+  gCamX = math.min(math.max(gCamX, 0), gMapWidth * gTileWidth)
+  gCamY = math.min(math.max(gCamY, 0), gMapHeight * gTileHeight)
 end
 
 function love.draw()
