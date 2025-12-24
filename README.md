@@ -1,3 +1,5 @@
+Outdated, please use https://github.com/karai17/Simple-Tiled-Implementation instead
+
 # LoveTiledMap
 
 Load and draw [Tiled maps (TMX)](http://www.mapeditor.org/) for [LÖVE](https://love2d.org/), based on https://love2d.org/wiki/TiledMapLoader
